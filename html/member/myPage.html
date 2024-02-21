@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/myPage.css">
+    <script src="https://kit.fontawesome.com/580a20ac80.js" crossorigin="anonymous"></script>
+    <script src="/jquery-3.7.1.min.js"></script>
+    <script>$(function(){$("#header").load("/html/include/header.html");$("#footer").load("/html/include/footer.html");});</script>
+    <script src="/js/changeNickPop.js"></script>
+    <title>MyPage</title>
+</head>
+<body>
+    <div id="header"></div>
+
+    <section>
+
+        <!-- 첫 번째 섹션 -->
+        <div class="container">
+
+            <div class="container__wrap">
+
+                <div class="container__left">
+
+                    <img src="/img/default_profile.gif" alt="기본 사진">
+    
+                </div>
+    
+    
+                <div class="container__right">
+
+                    <div class="userInfo">
+
+                        <div class="userName"><span>session.이름</span></div>
+                        <div class="userSub">
+                            <div class="userId"><span>session.아이디</span></div>
+                            <div class="NickName">
+                                <div class="NickTitle"><span>닉네임 : </span></div>
+                                <div class="ChangeNic"><span>변경할 닉네임을 입력하세요.</span></div>
+                                <button id="change" onclick="change()"><i class="fas fa-solid fa-pen-nib"></i></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="userMemberShip">
+
+                        <div class="currentInfo"><span>현재 고객 등급 조정중입니다.</span></div>
+                        <div class="lastMyInfo"><input type="button" value="회원정보 수정"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        
+
+        </div>
+
+        
+
+        <div class="container">
+
+            <div class="container__button ">
+
+                <video autoplay muted>
+                    <source src="https://adimg.cgv.co.kr/images/202401/BabyShark/0205_BabyShark_1080x608_PC.mp4" type="video/mp4">
+                </video>
+
+                <div class="button__control">
+                    <button id="quitBtn">탈퇴</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <div id="footer"></div> 
+</body>
+</html>

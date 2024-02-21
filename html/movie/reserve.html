@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/reserve.css">
+    <script src="https://kit.fontawesome.com/580a20ac80.js" crossorigin="anonymous"></script>
+    <script src="/jquery-3.7.1.min.js"></script>
+    <script>$(function(){$("#header").load("/html/include/header.html");$("#footer").load("/html/include/footer.html");});</script>
+    <script src="/js/changeNickPop.js"></script>
+    <script src="/js/reserve.js"></script>
+    <title>reserve</title>
+</head>
+<body>
+    <div id="header"></div>
+
+    <section>
+
+        <div class="wrapper">
+
+            <div class="wrapper__header">
+                <div class="wrapper__header__button">
+                    <button id="english"><span>ENGLISH</span></button>
+                    <button id="time"><span><i class="fa-solid fa-clock"></i> 상영시간표</span></button>
+                    <button id="reserveR"><span><i class="fa-solid fa-rotate-left"></i> 예매다시하기</span></button>
+                </div>
+            </div>
+            <div class="wrapper__container">
+                
+                <div class="container__left">
+                    <img src="/img/banner_s.png" alt="작은배너">
+                </div>
+
+                <div class="container__center">
+
+                    <div class="container__center__header">
+                        <div class="center__header__content">
+                            <span>인원/좌석</span>
+                            <button type="reset" style="background-color: black;"><span>다시하기<i class="fa-solid fa-rotate-left"></i></span></button>
+                        </div>
+                    </div>
+
+                    <div class="container__center__body">
+
+                        <div class="center__body__above">
+
+                            <div class="body__above__left">
+
+                                <div class="above__left__above">
+                                    <span>*최대 8명 선택 가능</span>
+                                </div>
+
+                                <div class="above__left__below">
+
+                                    <div class="below__left">
+                                        <div class="below__left__total">
+                                            <span>일반</span>
+                                            <div class="left__name__count">
+                                                <div class="name__count__num" data-id="0"><span>0</span></div>
+                                                <div class="name__count__num" data-id="1"><span>1</span></div>
+                                                <div class="name__count__num" data-id="2"><span>2</span></div>
+                                                <div class="name__count__num" data-id="3"><span>3</span></div>
+                                                <div class="name__count__num" data-id="4"><span>4</span></div>
+                                                <div class="name__count__num" data-id="5"><span>5</span></div>
+                                                <div class="name__count__num" data-id="6"><span>6</span></div>
+                                                <div class="name__count__num" data-id="7"><span>7</span></div>
+                                                <div class="name__count__num" data-id="8"><span>8</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="below__left__total">
+                                            <span>청소년</span>
+                                            <div class="left__name__count">
+                                                <div class="name__count__num" data-id="0"><span>0</span></div>
+                                                <div class="name__count__num" data-id="1"><span>1</span></div>
+                                                <div class="name__count__num" data-id="2"><span>2</span></div>
+                                                <div class="name__count__num" data-id="3"><span>3</span></div>
+                                                <div class="name__count__num" data-id="4"><span>4</span></div>
+                                                <div class="name__count__num" data-id="5"><span>5</span></div>
+                                                <div class="name__count__num" data-id="6"><span>6</span></div>
+                                                <div class="name__count__num" data-id="7"><span>7</span></div>
+                                                <div class="name__count__num" data-id="8"><span>8</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="below__left__total">
+                                            <span>경로</span>
+                                            <div class="left__name__count">
+                                                <div class="name__count__num" data-id="0"><span>0</span></div>
+                                                <div class="name__count__num" data-id="1"><span>1</span></div>
+                                                <div class="name__count__num" data-id="2"><span>2</span></div>
+                                                <div class="name__count__num" data-id="3"><span>3</span></div>
+                                                <div class="name__count__num" data-id="4"><span>4</span></div>
+                                                <div class="name__count__num" data-id="5"><span>5</span></div>
+                                                <div class="name__count__num" data-id="6"><span>6</span></div>
+                                                <div class="name__count__num" data-id="7"><span>7</span></div>
+                                                <div class="name__count__num" data-id="8"><span>8</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="below__left__total">
+                                            <span>우대</span>
+                                            <div class="left__name__count">
+                                                <div class="name__count__num" data-id="0"><span>0</span></div>
+                                                <div class="name__count__num" data-id="1"><span>1</span></div>
+                                                <div class="name__count__num" data-id="2"><span>2</span></div>
+                                                <div class="name__count__num" data-id="3"><span>3</span></div>
+                                                <div class="name__count__num" data-id="4"><span>4</span></div>
+                                                <div class="name__count__num" data-id="5"><span>5</span></div>
+                                                <div class="name__count__num" data-id="6"><span>6</span></div>
+                                                <div class="name__count__num" data-id="7"><span>7</span></div>
+                                                <div class="name__count__num" data-id="8"><span>8</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="below__right">
+                                        <button onclick="discount()">관람 할인 안내</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="body__above__right">
+
+                                <div class="above__right__above">
+
+                                    <div class="right__above__title">
+                                        <div class="above__title__theator"><span>DB 극장명</span></div>
+                                        <div class="above__title__location"><span>DB 상영관</span></div>
+                                        <div class="above__title__seat"><span>DB남은좌석/DB총좌석</span></div>
+                                    </div>
+
+                                    <div class="right__above__date">
+                                        <div class="above__date__today"><span>DB 상영날짜</span></div>
+                                        <div class="above__date__time"><span>DB 상영시간</span></div>
+                                    </div>
+                                    
+                                </div>
+
+
+                                <div class="above__right__below">
+                                        <button>상영시간 변경하기</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="center__body__below">
+
+                            <div class="body__below__left">
+
+                                <div class="below__left__screen">
+                                    <span>SCREEN</span>
+                                </div>
+
+                                <div class="below__left__seat">
+
+                                    <div class="below__left__line">
+
+                                        <div class="line__number"><span>A</span></div>
+                                        <div class="line__seat">
+                                            <div class="line__list"><span>1</span></div>
+                                            <div class="line__list"><span>2</span></div>
+                                            <div class="line__list"><span>3</span></div>
+                                            <div class="line__list"><span>4</span></div>
+                                            <div class="line__list"><span>5</span></div>
+                                            <div class="line__list"><span>6</span></div>
+                                            <div class="line__list"><span>7</span></div>
+                                            <div class="line__list"><span>8</span></div>
+                                            <div class="line__list"><span>9</span></div>
+                                            <div class="line__list"><span>10</span></div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="below__left__line">
+
+                                        <div class="line__number"><span>B</span></div>
+                                        <div class="line__seat">
+                                            <div class="line__list"><span>1</span></div>
+                                            <div class="line__list"><span>2</span></div>
+                                            <div class="line__list"><span>3</span></div>
+                                            <div class="line__list"><span>4</span></div>
+                                            <div class="line__list"><span>5</span></div>
+                                            <div class="line__list"><span>6</span></div>
+                                            <div class="line__list"><span>7</span></div>
+                                            <div class="line__list"><span>8</span></div>
+                                            <div class="line__list"><span>9</span></div>
+                                            <div class="line__list"><span>10</span></div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="below__left__line">
+
+                                        <div class="line__number"><span>C</span></div>
+                                        <div class="line__seat">
+                                            <div class="line__list"><span>1</span></div>
+                                            <div class="line__list"><span>2</span></div>
+                                            <div class="line__list"><span>3</span></div>
+                                            <div class="line__list"><span>4</span></div>
+                                            <div class="line__list"><span>5</span></div>
+                                            <div class="line__list"><span>6</span></div>
+                                            <div class="line__list"><span>7</span></div>
+                                            <div class="line__list"><span>8</span></div>
+                                            <div class="line__list"><span>9</span></div>
+                                            <div class="line__list"><span>10</span></div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="below__left__line">
+
+                                        <div class="line__number"><span>D</span></div>
+                                        <div class="line__seat">
+                                            <div class="line__list"><span>1</span></div>
+                                            <div class="line__list"><span>2</span></div>
+                                            <div class="line__list"><span>3</span></div>
+                                            <div class="line__list"><span>4</span></div>
+                                            <div class="line__list"><span>5</span></div>
+                                            <div class="line__list"><span>6</span></div>
+                                            <div class="line__list"><span>7</span></div>
+                                            <div class="line__list"><span>8</span></div>
+                                            <div class="line__list"><span>9</span></div>
+                                            <div class="line__list"><span>10</span></div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="below__left__line">
+
+                                        <div class="line__number"><span>E</span></div>
+                                        <div class="line__seat">
+                                            <div class="line__list"><span>1</span></div>
+                                            <div class="line__list"><span>2</span></div>
+                                            <div class="line__list"><span>3</span></div>
+                                            <div class="line__list"><span>4</span></div>
+                                            <div class="line__list"><span>5</span></div>
+                                            <div class="line__list"><span>6</span></div>
+                                            <div class="line__list"><span>7</span></div>
+                                            <div class="line__list"><span>8</span></div>
+                                            <div class="line__list"><span>9</span></div>
+                                            <div class="line__list"><span>10</span></div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="below__left__line">
+
+                                        <div class="line__number"><span>F</span></div>
+                                        <div class="line__seat">
+                                            <div class="line__list"><span>1</span></div>
+                                            <div class="line__list"><span>2</span></div>
+                                            <div class="line__list"><span>3</span></div>
+                                            <div class="line__list"><span>4</span></div>
+                                            <div class="line__list"><span>5</span></div>
+                                            <div class="line__list"><span>6</span></div>
+                                            <div class="line__list"><span>7</span></div>
+                                            <div class="line__list"><span>8</span></div>
+                                            <div class="line__list"><span>9</span></div>
+                                            <div class="line__list"><span>10</span></div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="below__left__line">
+
+                                        <div class="line__number"><span>G</span></div>
+                                        <div class="line__seat">
+                                            <div class="line__list"><span>1</span></div>
+                                            <div class="line__list"><span>2</span></div>
+                                            <div class="line__list"><span>3</span></div>
+                                            <div class="line__list"><span>4</span></div>
+                                            <div class="line__list"><span>5</span></div>
+                                            <div class="line__list"><span>6</span></div>
+                                            <div class="line__list"><span>7</span></div>
+                                            <div class="line__list"><span>8</span></div>
+                                            <div class="line__list"><span>9</span></div>
+                                            <div class="line__list"><span>10</span></div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="below__left__line">
+
+                                        <div class="line__number"><span>H</span></div>
+                                        <div class="line__seat">
+                                            <div class="line__list"><span>1</span></div>
+                                            <div class="line__list"><span>2</span></div>
+                                            <div class="line__list"><span>3</span></div>
+                                            <div class="line__list"><span>4</span></div>
+                                            <div class="line__list"><span>5</span></div>
+                                            <div class="line__list"><span>6</span></div>
+                                            <div class="line__list"><span>7</span></div>
+                                            <div class="line__list"><span>8</span></div>
+                                            <div class="line__list"><span>9</span></div>
+                                            <div class="line__list"><span>10</span></div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="below__left__line">
+
+                                        <div class="line__number numberI"><span>I</span></div>
+                                        <div class="line__seat">
+                                            <div class="line__list"><span>1</span></div>
+                                            <div class="line__list"><span>2</span></div>
+                                            <div class="line__list"><span>3</span></div>
+                                            <div class="line__list"><span>4</span></div>
+                                            <div class="line__list"><span>5</span></div>
+                                            <div class="line__list"><span>6</span></div>
+                                            <div class="line__list"><span>7</span></div>
+                                            <div class="line__list"><span>8</span></div>
+                                            <div class="line__list"><span>9</span></div>
+                                            <div class="line__list"><span>10</span></div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="below__left__line">
+
+                                        <div class="line__number"><span>J</span></div>
+                                        <div class="line__seat">
+                                            <div class="line__list"><span>1</span></div>
+                                            <div class="line__list"><span>2</span></div>
+                                            <div class="line__list"><span>3</span></div>
+                                            <div class="line__list"><span>4</span></div>
+                                            <div class="line__list"><span>5</span></div>
+                                            <div class="line__list"><span>6</span></div>
+                                            <div class="line__list"><span>7</span></div>
+                                            <div class="line__list"><span>8</span></div>
+                                            <div class="line__list"><span>9</span></div>
+                                            <div class="line__list"><span>10</span></div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="body__below__right">
+
+                                <button id="bigBtn"><i class="fas fa-regular fa-magnifying-glass-plus"></i>크게보기</button>
+
+                                <div class="seat__color">
+
+                                    <div class="color1">
+                                        <div class="color__img1"></div>
+                                        <span>선택</span>
+                                    </div>
+                                    <div class="color2">
+                                        <div class="color__img2"></div>
+                                        <span>예매완료</span>
+                                    </div>
+                                    <div class="color3">
+                                        <div class="color__img3"></div>
+                                        <span>선택불가</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="seat__color2">
+
+                                    <div class="color1">
+                                        <div class="color__img4"></div>
+                                        <span>Light석</span>
+                                    </div>
+                                    <div class="color2">
+                                        <div class="color__img5"></div>
+                                        <span>장애인석</span>
+                                    </div>
+                                    <div class="color3">
+                                        <div class="color__img6"></div>
+                                        <span>sweetBox</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="container__right">
+                    <img src="/img/banner_s.png" alt="작은배너">
+                </div>
+
+            </div>
+
+            <div class="wrapper__footer">
+
+                <div class="wrapper__footer__content">
+
+                    <div class="footer__content__back">
+                        <a href="/html/movie/choiceMovie.html">
+                            <div class="back__button">
+                                <i class="fa-solid fa-caret-left"></i>
+                                <span>영화선택</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="footer__content__movie">
+                        <div class="movie__img">
+                            <img src="/img/miniMovie.jpg">
+                        </div>
+                        <div class="movie__info">
+                            <a href=""><span>웡카</span></a>
+                            <span>2D <br> 전체관람가 </span>
+                        </div>
+
+                    </div>
+                    <div class="footer__content__date">
+
+                        <div class="date__theator">
+                            <div class="theator"><span>극장</span></div>
+                            <div class="theator__location"><a href=""><span>DB 영화관</span></a></div>
+                        </div>
+                        <div class="date__Date">
+                            <div class="date"><span>일시</span></div>
+                            <div class="date__time"><span>DB 선택한 시간</span></div>
+                        </div>
+                        <div class="date__location">
+                            <div class="location"><span>상영관</span></div>
+                            <div class="location__floor"><span>DB 선택한 영화위치</span></div>
+                        </div>
+                        <div class="date__count">
+                            <div class="count"><span>인원</span></div>
+                            <div class="count__select"><span>위에서 선택한 인원</span></div>
+                        </div>
+
+                    </div>
+                    <div class="footer__content__seat">
+                        <div class="seat__title">
+                            <span>좌석명</span>
+                            <span>좌석번호</span>
+                        </div>
+                        <div class="seat__choice">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <span>좌석선택</span>
+                        </div>
+                    </div>
+
+                    <div class="footer__content__price">
+                        <div class="price__list">
+                            <div class="list"><span>일반</span></div>
+                            <div class="price"><span>개별 가격</span></div>
+                        </div>
+                        <div class="price__total">
+                            <div class="total"><span>총금액</span></div>
+                            <div class="total__price"><span>총 금액</span></div>
+                        </div>
+                    </div>
+
+                    <div class="footer__content__go">
+                        <div class="go__button">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>결제하기</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="wrapper__footer__banner">
+                <a href=""><img src="/img/banner3.jpg" alt="하단배너"></a>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <div id="footer"></div>
+</body>
+</html>

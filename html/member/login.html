@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="https://kit.fontawesome.com/580a20ac80.js" crossorigin="anonymous"></script>
+    <script src="/jquery-3.7.1.min.js"></script>
+    <script src="/js/login.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <script>
+        $(function(){
+            $("#header").load("/html/include/header.html");
+            $("#footer").load("/html/include/footer.html");
+        });
+    </script>
+
+    <div id="header"></div>
+
+    <section>
+
+        <div class="login__background">
+
+            <div class="login__background__outerBox">
+
+                <div class="login__background__above">
+
+                    <div class="background__above__content">
+
+                        <form action="" class="login__left">
+
+                            <div class="login__left__above">
+
+                                <div class="above__member__login"><span>로그인</span></div>
+                                <div class="above__noMember__login"><span>비회원 로그인</span></div>
+                                <div class="above__noMember__reserveCheck"><span>비회원 예매확인</span></div>
+
+                            </div>
+
+                            <div class="login__left__below">
+                                
+                                <span class="left__below__span">아이디 비밀번호를 입력하신 후, 로그인 버튼을 클릭해 주세요.</span>
+
+                                <div class="left__below__loginInfo">
+
+                                    <div class="left__below__ID">
+                                        <i class="fas fa-regular fa-user"></i>
+                                        <input type="text">
+                                    </div>
+                                    <div class="left__below__PW">
+                                        <i class="fas fa-regular fa-lock"></i>
+                                        <input type="password">
+                                    </div>
+                                    <div class="left__below__BTN">
+                                        <div class="left__below__btnLine">
+                                            <button type="submit" value="로그인">로그인</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="left__below__memberInfo">
+
+                                    <div class="below__memberInfo__remember">
+                                        <input type="checkbox">
+                                        <span>아이디저장</span>
+                                    </div>
+
+                                    <div class="memberInfo__find">
+                                        <a href=""><div class="below__memberInfo__FindId"><span>아이디 찾기<i class="fas fa-regular fa-chevron-right"></i></span></div></a>
+                                        <a href=""><div class="below__memberInfo__FindPw"><span>비밀번호 찾기<i class="fas fa-regular fa-chevron-right"></i></span></div></a>
+                                    </div>
+                                </div>
+
+                                <div class="left__below__naverLogin">
+                                    <input type="submit" value="네이버 로그인">
+                                    <i class="fas fa-solid fa-n"></i>
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                        <div class="login__right">
+
+                            <img src="/img/ad1.png">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="login__background__below"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="footer"></div>
+</body>
+</html>

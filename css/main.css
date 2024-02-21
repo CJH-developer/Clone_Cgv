@@ -1,0 +1,376 @@
+button, a{
+    cursor: pointer;
+}
+
+
+/* section 영역 전체 wrapper*/
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+/* movie */
+.wrapper__movie{
+    width: 980px;
+
+}
+
+/* movie + span*/
+.wrapper__movie__box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* video */
+.wrapper__movie__box video{
+    opacity: 0.7;
+}
+
+.wrapper__movie__title{
+    position: absolute;
+    top: 40%;
+}
+.wrapper__movie__title span{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+.wrapper__movie__subTitle{
+    position: absolute;
+    top: 53%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper__movie__subTitle span{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* movie button */
+.wrapper__movie__button{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 68%;
+}
+
+.wrapper__movie__button a{
+    padding-right: 10px;
+}
+
+#btn1{
+    width: 100px;
+    border-radius: 8px;
+    height: 33px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn1 > span, i{
+    font-size: 15px;
+}
+
+#btn1 > i{
+    padding-left: 5px;
+}
+
+.btn2 i, .btn3 i{
+    font-size: 25px;
+    color: white;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+
+/***************************************************************************/
+
+
+/* 무비 차트 / 상영 예정작 */
+
+.wrapper2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    position: relative;
+}
+
+.wrapper__chart{
+    width: 980px;
+}
+
+.wrapper__chart__content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.chart__content__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 무비차트 / 상영 예정작 */
+.content__top__title{
+    display: flex;
+    align-items: center;
+}
+
+.content__top__title div{
+    padding-right: 20px;
+}
+
+.mainTitle{
+    border-right: 0.7px solid rgb(224, 217, 217);
+    cursor: pointer;
+}
+
+.mainTitle span{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.subTitle{
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.subTitle span{
+    font-size: 25px;
+    font-weight: 500;
+    color: gray;
+}
+
+
+/* 전체보기 버튼 */
+.content__top__button{
+    width: 100px;
+    height: 35px;
+    border: 1px solid rgb(204, 200, 200);
+    border-radius: 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content__top__button > a{
+    font-size: 14px;
+}
+
+.content__top__button > a > i{
+    padding-left: 15px;
+}
+
+.content__top__button:hover{
+    border: 3px solid rgb(241, 159, 159);
+}
+
+/***************************************************************************/
+
+/* 무비 차트 영화목록 */
+
+.swiper{
+    width: 980px;
+    margin-top: 30px;
+}
+
+.swiper-wrapper{
+    display: flex;
+}
+
+.swiper-wrapper li{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 12px;
+}
+
+.poster{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.poster:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.event_poster{
+    width: 330px;
+    height: 220px;
+    border-radius: 15px;
+}
+
+.event_poster:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.list__mainTitle{
+    font-weight: 600;
+}
+
+.list__subTitle{
+    display: flex;
+    align-items: center;
+}
+
+.list__subTitle img{
+    width: 15px;
+}
+
+
+.swiper.swiper2{
+    display: none;
+}
+
+.swiper2{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+    margin-top: 30px;
+}
+
+
+/* special */
+.special__body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.special__image{
+    margin-right: 60px;
+    position: relative;
+    margin-right: 20px;
+}
+
+
+.special__image img{
+    width: 500px;
+    height: 330px
+}
+
+.special__image img:hover{
+    transform: scale(1.1);
+    transition: transform .5s;
+}
+
+
+#special2, #special3, #special4{
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+
+.special__list{
+    position: relative;
+    width: 100%;
+}
+
+.special__list li{
+    padding: 20px 0px;
+    border-top: 1px solid rgb(233, 229, 229);
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.special__list li:hover{
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.special__list span{
+    font-size: 15px;
+    position: absolute;
+    right: 5px;
+    font-weight: 500;
+    color: gray;
+}
+
+
+/* section5 */
+.section4__body{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.package__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 980px;
+}
+
+.package{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(233, 229, 229);
+    margin: 0px 25px;
+    width: 100%;
+}
+
+.package__title{
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 10px;
+}
+
+.package__main__title span{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+.package1{
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    padding: 0px 5px;
+}
+
+.package1 img{
+    width: 70px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.package1__title{
+    display: flex;
+    flex-direction: column;
+    padding-right: 0px;
+    margin-right: 10px;
+    padding-left: 15px;
+    width: 150px;
+}
+
+.package1__main__title span{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.package1__sub__title span{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+

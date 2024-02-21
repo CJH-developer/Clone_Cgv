@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/html/Movie_Price/price.css">
+    <script src="https://kit.fontawesome.com/580a20ac80.js" crossorigin="anonymous"></script>
+    <script src="/jquery-3.7.1.min.js"></script>
+    <script>$(function(){$("#header").load("/html/include/header.html");$("#footer").load("/html/include/footer.html");});</script>
+    <title>Price</title>
+</head>
+
+    <div id="header"></div>
+    
+    <div class="price">
+        
+        <div class="price-header">
+            <div>
+                <span class="price-title">관람가격 안내</span>
+            </div>
+            <div>
+                <a href="#" class="price-region">지역별</a>
+                <a href="#" class="price-theater">특별관</a>
+            </div>
+        </div>
+        
+        <div class="select-region">
+            <div class="border1">            
+                <select name="sel_region" id="region_id1" class="region_class01">
+                    <option value="01">서울</option>
+                    <option value="02">경기</option>
+                    <option value="03">인천</option>
+                    <option value="04">부산</option>
+                </select>
+            </div>
+            <div class="border2">
+                <select name="sel_region" id="region_id2" class="region_class02">
+                        <option value="01">UM.강남</option>
+                        <option value="02">UM.강변</option>
+                        <option value="03">UM.건대입구</option>
+                        <option value="04">UM.구로</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="price-list">
+            <div class="norm-2d">
+                ■ 일반(2D)
+                <table class="price-table">
+                    <thead class="price-head">
+                        <tr>
+                            <th style="width:15%; text-align: center;">요일</th>
+                            <th style="width:49%; text-align: center;">시간대</th>
+                            <th style="width:18%">일반</th>
+                            <th style="width:18%">청소년</th>
+                        </tr>
+                    </thead>
+                    <tbody class="price-body">
+                        <tr>
+                            <td rowspan="4" style="border-bottom: 1px solid #ccc; vertical-align: middle;">월~목</td>
+                            <td style="text-align: center;">모닝(06:00~)</td>
+                            <td style="text-align: center;">10,000</td>
+                            <td style="text-align: center;">8,000</td>
+                        </tr>
+                        <tr>
+                            <td>브런치(11:01~)</td>
+                            <td>12,000</td>
+                            <td>10,000</td>
+                        </tr>
+                        <tr>
+                            <td>일반(13:01~)</td>
+                            <td>14,000</td>
+                            <td>11,000</td>
+                        </tr>
+                        <tr>
+                            <td>심야(24:00~)</td>
+                            <td>9,000</td>
+                            <td>9,000</td>
+                        </tr>
+                    </tbody>
+                    <tbody class="price-body">
+                        <tr>
+                            <td rowspan="4" style="vertical-align: middle;">금~일(공휴일)</td>
+                            <td>모닝(06:00 ~)</td>
+                            <td>11,000</td>
+                            <td>8,000</td>
+                        </tr>
+                        <tr>
+                            <td>브런치(11:01 ~)</td>
+                            <td>15,000</td>
+                            <td>12,000</td>
+                        </tr>
+                        <tr>
+                            <td>일반(13:01 ~)</td>
+                            <td>15,000</td>
+                            <td>12,000</td>
+                        </tr>
+                        <tr>
+                            <td>심야(24:00~)</td>
+                            <td>9,000</td>
+                            <td>9,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="norm-3d">
+                ■ 일반(3D)
+                    <table class="price-table">
+                        <thead class="price-head">
+                            <tr>
+                                <th style="width:15%; text-align: center;">요일</th>
+                                <th style="width:49%; text-align: center;">시간대</th>
+                                <th style="width:18%">일반</th>
+                                <th style="width:18%">청소년</th>
+                            </tr>
+                        </thead>
+                        <tbody class="price-body">
+                            <tr>
+                                <td rowspan="4" style="border-bottom: 1px solid #ccc; vertical-align: middle;">월~목</td>
+                                <td style="text-align: center;">모닝(06:00~)</td>
+                                <td style="text-align: center;">10,000</td>
+                                <td style="text-align: center;">8,000</td>
+                            </tr>
+                            <tr>
+                                <td>브런치(11:01~)</td>
+                                <td>12,000</td>
+                                <td>10,000</td>
+                            </tr>
+                            <tr>
+                                <td>일반(13:01~)</td>
+                                <td>14,000</td>
+                                <td>11,000</td>
+                            </tr>
+                        </tbody>
+                        <tbody class="price-body">
+                            <tr>
+                                <td rowspan="4" style="vertical-align: middle;">금~일(공휴일)</td>
+                                <td>모닝(06:00 ~)</td>
+                                <td>11,000</td>
+                                <td>8,000</td>
+                            </tr>
+                            <tr>
+                                <td>브런치(11:01 ~)</td>
+                                <td>15,000</td>
+                                <td>12,000</td>
+                            </tr>
+                            <tr>
+                                <td>일반(13:01 ~)</td>
+                                <td>15,000</td>
+                                <td>12,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                <div style="margin-top: 70px;"> ■ SWEETBOX(2D)
+                    <table class="price-table">
+                        <thead class="price-head">
+                            <tr>
+                                <th style="width:15%; text-align: center;">요일</th>
+                                <th style="width:49%; text-align: center;">시간대</th>
+                                <th style="width:18%">일반</th>
+                                <th style="width:18%">청소년</th>
+                            </tr>
+                        </thead>
+                        <tbody class="price-body">
+                            <tr>
+                                <td rowspan="4" style="border-bottom: 1px solid #ccc; vertical-align: middle;">월~목</td>
+                                <td style="text-align: center;">모닝(06:00~)</td>
+                                <td style="text-align: center;">10,000</td>
+                                <td style="text-align: center;">8,000</td>
+                            </tr>
+                            <tr>
+                                <td>브런치(11:01~)</td>
+                                <td>12,000</td>
+                                <td>10,000</td>
+                            </tr>
+                            <tr>
+                                <td>일반(13:01~)</td>
+                                <td>14,000</td>
+                                <td>11,000</td>
+                            </tr>                       
+                        </tbody>
+                        <tbody class="price-body">
+                            <tr>
+                                <td rowspan="4" style="vertical-align: middle;">금~일(공휴일)</td>
+                                <td>모닝(06:00 ~)</td>
+                                <td>11,000</td>
+                                <td>8,000</td>
+                            </tr>
+                            <tr>
+                                <td>브런치(11:01 ~)</td>
+                                <td>15,000</td>
+                                <td>12,000</td>
+                            </tr>
+                            <tr>
+                                <td>일반(13:01 ~)</td>
+                                <td>15,000</td>
+                                <td>12,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="price-list">
+            <div class="norm-2d">
+                ■ SWEETBOX(3D)
+                <table class="price-table">
+                    <thead class="price-head">
+                        <tr>
+                            <th style="width:15%; text-align: center;">요일</th>
+                            <th style="width:49%; text-align: center;">시간대</th>
+                            <th style="width:18%">일반</th>
+                            <th style="width:18%">청소년</th>
+                        </tr>
+                    </thead>
+                    <tbody class="price-body">
+                        <tr>
+                            <td rowspan="4" style="border-bottom: 1px solid #ccc; vertical-align: middle;">월~목</td>
+                            <td style="text-align: center;">모닝(06:00~)</td>
+                            <td style="text-align: center;">10,000</td>
+                            <td style="text-align: center;">8,000</td>
+                        </tr>
+                        <tr>
+                            <td>브런치(11:01~)</td>
+                            <td>12,000</td>
+                            <td>10,000</td>
+                        </tr>
+                        <tr>
+                            <td>일반(13:01~)</td>
+                            <td>14,000</td>
+                            <td>11,000</td>
+                        </tr>
+                        <tr>
+                            <td>심야(24:00~)</td>
+                            <td>9,000</td>
+                            <td>9,000</td>
+                        </tr>
+                    </tbody>
+                    <tbody class="price-body">
+                        <tr>
+                            <td rowspan="4" style="vertical-align: middle;">금~일(공휴일)</td>
+                            <td>모닝(06:00 ~)</td>
+                            <td>11,000</td>
+                            <td>8,000</td>
+                        </tr>
+                        <tr>
+                            <td>브런치(11:01 ~)</td>
+                            <td>15,000</td>
+                            <td>12,000</td>
+                        </tr>
+                        <tr>
+                            <td>일반(13:01 ~)</td>
+                            <td>15,000</td>
+                            <td>12,000</td>
+                        </tr>
+                        <tr>
+                            <td>심야(24:00~)</td>
+                            <td>9,000</td>
+                            <td>9,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="margin-top: 70px;"> ■ SCREENX(2D)_SWEETBOX
+                    <table class="price-table">
+                        <thead class="price-head">
+                            <tr>
+                                <th style="width:15%; text-align: center;">요일</th>
+                                <th style="width:49%; text-align: center;">시간대</th>
+                                <th style="width:18%">일반</th>
+                                <th style="width:18%">청소년</th>
+                            </tr>
+                        </thead>
+                        <tbody class="price-body">
+                            <tr>
+                                <td rowspan="4" style="border-bottom: 1px solid #ccc; vertical-align: middle;">월~목</td>
+                                <td style="text-align: center;">모닝(06:00~)</td>
+                                <td style="text-align: center;">15,000</td>
+                                <td style="text-align: center;">15,000</td>
+                            </tr>
+                            <tr>
+                                <td>브런치(11:01~)</td>
+                                <td>16,000</td>
+                                <td>15,000</td>
+                            </tr>
+                            <tr>
+                                <td>일반(13:01~)</td>
+                                <td>17,000</td>
+                                <td>15,000</td>
+                            </tr>                       
+                        </tbody>
+                        <tbody class="price-body">
+                            <tr>
+                                <td rowspan="4" style="vertical-align: middle;">금~일(공휴일)</td>
+                                <td>모닝(06:00 ~)</td>
+                                <td>17,000</td>
+                                <td>17,000</td>
+                            </tr>
+                            <tr>
+                                <td>브런치(11:01 ~)</td>
+                                <td>20,000</td>
+                                <td>17,000</td>
+                            </tr>
+                            <tr>
+                                <td>일반(13:01 ~)</td>
+                                <td>20,000</td>
+                                <td>17,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="norm-3d">
+                ■ SCREENX(2D)
+                    <table class="price-table">
+                        <thead class="price-head">
+                            <tr>
+                                <th style="width:15%; text-align: center;">요일</th>
+                                <th style="width:49%; text-align: center;">시간대</th>
+                                <th style="width:18%">일반</th>
+                                <th style="width:18%">청소년</th>
+                            </tr>
+                        </thead>
+                        <tbody class="price-body">
+                            <tr>
+                                <td rowspan="4" style="border-bottom: 1px solid #ccc; vertical-align: middle;">월~목</td>
+                                <td style="text-align: center;">모닝(06:00~)</td>
+                                <td style="text-align: center;">12,000</td>
+                                <td style="text-align: center;">11,000</td>
+                            </tr>
+                            <tr>
+                                <td>브런치(11:01~)</td>
+                                <td>15,000</td>
+                                <td>13,000</td>
+                            </tr>
+                            <tr>
+                                <td>일반(13:01~)</td>
+                                <td>16,000</td>
+                                <td>13,000</td>
+                            </tr>
+                        </tbody>
+                        <tbody class="price-body">
+                            <tr>
+                                <td rowspan="4" style="vertical-align: middle;">금~일(공휴일)</td>
+                                <td>모닝(06:00 ~)</td>
+                                <td>12,000</td>
+                                <td>11,000</td>
+                            </tr>
+                            <tr>
+                                <td>브런치(11:01 ~)</td>
+                                <td>17,000</td>
+                                <td>13,000</td>
+                            </tr>
+                            <tr>
+                                <td>일반(13:01 ~)</td>
+                                <td>17,000</td>
+                                <td>13,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+    </div>
+    <div class="price-footer">
+        <p class="price-guide1">
+            <span> ■ 경로 및 우대 (장애/국가유공자) </span> <br>
+            <span>경로 : 2D: 7,000원ㆍ3D: 10,000원</span> <br>
+            <span>우대 : 2D: 5,000원ㆍ3D: 8,000원</span> <br>
+            <span>4DX 2D:  9,000원 ~ 14,000원</span> <br>
+            <span>4DX 3D: 12,000원 ~17,000원</span> <br>
+            <span>4DX SCREENX 2D : 12,000원 ~15,000원</span> <br>
+            <span>SCREENX 2D:  7,000원 ~ 12,000원</span> <br>
+        </p>
+
+        <div class="price-guide2">※ 경로 및 우대 요금은 시간대별로 상이하며 4DX, SCREENX 외 특별관은 우대가격이 적용되지 않습니다.</div>
+        <div class="price-guide3">※ 상영관 A~B열은 -1천원 할인 적용됩니다. (단, 모닝 및 일부 상영관 제외)</div>
+        <div class="price-guide2">※관람 가격 및 시간대 운영은 극장마다 상이할 수 있으며, 상기 가격은 <span>UM 강남</span>에 한해 적용됩니다.</div>
+    </div>
+
+    <div id="footer"></div>
+
+</body>
+</html>

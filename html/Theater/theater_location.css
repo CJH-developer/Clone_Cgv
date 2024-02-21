@@ -1,0 +1,25 @@
+/* --------------------- 버스 지하철 노선  ---------------------*/
+.theater-name {text-align: center; margin-bottom: 20px; font-size: 30px; font-weight: bold;}
+.transportation-schedule {display: flex; margin-top: 50px; width:980px;}
+.bus-train-schedule {display: flex; flex-direction: column; width: 80%;}
+.ad-banner {display: flex; flex-direction: column; width: 20%;}
+.ad-banner img {margin-bottom: 10px; margin-left: 30px;}
+
+/* --------------------- 버스 지하철 노선 타이틀  ---------------------*/
+.trans-title {display: flex;}
+.trans-title .bus-image {background: url(/Theator_img/sprite_icon.png) -200px -130px no-repeat; width: 50px; height: 27px;}
+.trans-title span {font-size: 20px; font-weight: bold;}
+.trans-title > a {color: white; font-size: 12px; background-color: rgba(247, 18, 18, 0.774); padding: 5px 10px; border-radius: 2px; font-weight: bold; margin-left: 550px;}
+.trans-title { padding:8px;  border-bottom: 2px solid black;}
+.trans-title .park-image{background: url(/Theator_img/sprite_icon.png) -200px -158px no-repeat; width: 50px; height: 27px;}
+
+
+/* --------------------- 버스 지하철 노선 내용  ---------------------*/
+.trans-info p {padding: 20px; margin-top: 10px; font-size: 15px;}
+.trans-info:last-child { font-size: 15px;}
+
+
+
+
+
+

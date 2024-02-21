@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/html/Theater/theater.css">
+    <link rel="stylesheet" href="/html/Theater/flexprac.css">
+    <link rel="stylesheet" href="/html/Theater/theater_location.css">
+    <script src="https://kit.fontawesome.com/580a20ac80.js" crossorigin="anonymous"></script>
+    <script src="/jquery-3.7.1.min.js"></script>
+    <script>$(function(){$("#header").load("/html/include/header.html");$("#footer").load("/html/include/footer.html");});</script>
+    <script src="/html/Theater/theater.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=de0d1f4e5b29ece2d198622975cde397"></script>
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=s3rd6qo8j0"></script>
+
+</head>
+<body>
+    <div id="header"></div>
+    
+    <div class="container">
+        <div class="fav-theater-wrap">
+            <div class="favorite-wrap">
+                <div class="sect-favorite">
+                    <h4><img src="/Theator_img/h4_favorite_cgv.png"></h4>
+                    <ul class="fav-list">
+                        <li>
+                            <a href="#">
+                                <span>1</span>
+                            </a>
+                        </li>
+                        <li><a href="#"><span>2</span></a></li>
+                        <li><a href="#"><span>3</span></a></li>
+                        <li><a href="#"><span>4</span></a></li>
+                        <li><a href="#"><span>5</span></a></li>
+                    </ul>
+                    <button class="fav-list-add"></button>
+                </div>
+
+                <div class="sect-city">
+                    <ul>
+                        <li class="on"><a href="#">서울</a></li>
+                        <li><a href="#">경기</a></li>
+                        <li><a href="#">인천</a></li>
+                        <li><a href="#">강원</a></li>
+                        <li><a href="#">대전/충청</a></li>
+                        <li><a href="#">부산/울산</a></li>
+                        <li><a href="#">경상</a></li>
+                        <li><a href="#">광주/전라/제주</a></li>
+                    </ul>
+                    <div class="area">
+                        <ul class="theater-list active" data-city="서울">
+                            <li><a href="#"><span>CGV강남</span></a></li>
+                            <li><a href="#"><span>CGV강변</span></a></li>
+                            <li><a href="#"><span>CGV건대입구</span></a></li>
+                            <li><a href="#"><span>CGV구로</span></a></li>
+                            <li><a href="#"><span>CGV대학로</span></a></li>
+                            <li><a href="#"><span>CGV동대문</span></a></li>
+                            <li><a href="#"><span>CGV등촌</span></a></li>
+                            <li><a href="#"><span>CGV등촌</span></a></li>
+                            <li><a href="#"><span>CGV미아</span></a></li>
+                            <li><a href="#"><span>CGV방학</span></a></li>
+                            <li><a href="#"><span>CGV불광</span></a></li>
+                            <li><a href="#"><span>CGV상봉</span></a></li>
+                            <li><a href="#"><span>CGV성신여대입구</span></a></li>
+                            <li><a href="#"><span>CGV송파</span></a></li>
+                            <li><a href="#"><span>CGV신촌아트레온</span></a></li>
+                            <li><a href="#"><span>CGV압구정</span></a></li>
+                            <li><a href="#"><span>CGV여의도</span></a></li>
+                            <li><a href="#"><span>CGV연남</span></a></li>
+                            <li><a href="#"><span>CGV영등포</span></a></li>
+                            <li><a href="#"><span>CGV천호</span></a></li>
+                            <li><a href="#"><span>CGV하계</span></a></li>
+                            <li><a href="#"><span>CGV용산아이파크</span></a></li>
+                            <li><a href="#"><span>CGV홍대</span></a></li>
+                            <li><a href="#"><span>CGV홍대</span></a></li>
+                            <li><a href="#"><span>CGV홍대</span></a></li>
+                        </ul>
+                        <ul class="theater-list" data-city="경기">
+                            <li><a href="#"><span>CGV경기광주</span></a></li>
+                            <li><a href="#"><span>CGV고양백석</span></a></li>
+                            <li><a href="#"><span>CGV고양행신</span></a></li>
+                            <li><a href="#"><span>CGV광교</span></a></li>
+                            <li><a href="#"><span>CGV광교상현</span></a></li>
+                            <li><a href="#"><span>CGV광명역</span></a></li>
+                        </ul>
+                        <ul class="theater-list" data-city="인천">
+                            <li><a href="#"><span>CGV계양</span></a></li>
+                            <li><a href="#"><span>CGV남주안</span></a></li>
+                            <li><a href="#"><span>CGV부평</span></a></li>
+                            <li><a href="#"><span>CGV송도타임스페이스</span></a></li>
+                            <li><a href="#"><span>CGV인천연수</span></a></li>
+                            <li><a href="#"><span>CGV인천학익</span></a></li>
+                            <li><a href="#"><span>CGV인천논현</span></a></li>
+                            <li><a href="#"><span>CGV청라</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                var sectCity = document.querySelector(".sect-city");
+                var theaterLists = document.querySelectorAll(".theater-list");
+        
+                sectCity.addEventListener('click', function () {
+                    var target = event.target;
+                    
+                    if (target.tagName == 'A') {
+                        var cityName = target.innerHTML;
+        
+                        theaterLists.forEach(function (list) {
+                            list.classList.remove("active");
+                        });
+        
+                        var theaterList = document.querySelector('.theater-list[data-city="' + cityName + '"]');
+                        if (theaterList) {
+                            theaterList.classList.add("active");
+                        }
+                    }
+                });
+            </script>
+
+            <div class="theater-logo">
+                <h3><img src="/Theator_img/h3_theater.gif" alt=""></h3>
+            </div>
+
+            <div class="wrap-theater">
+                <div class="sect-theater">
+                    <h4><span>UM강남</span></h4>
+                    <a href="#"><span>단체/대관문의</span></a>
+                </div>
+                <div class="wrap-theater-info">
+                    <div class="box-image">
+                        <div class="theater-pic">
+                            <img src="/Theator_img/CGVgangnam.jpg" alt="">
+                        </div>
+                        <div class="box-contents">
+                            <div class="theater-info">
+                                <strong class="title">
+                                    서울특별시 강남구 역삼동 814-6 스타플렉스 <br>
+                                    서울특별시 강남구 강남대로 438 (역삼동)
+                                    <a href="#">위치/주차 안내></a>
+                                </strong>
+                                <span class="phone">
+                                    1544-1122 <br>
+                                    6관 / 874석
+                                </span>
+                                <span class="screenplay">
+                                    <a href="#" class="screenX"></a>
+                                </span>
+                            </div>
+                            <div class="notice">
+                                <span class="noti">공지사항</span>
+                                <a href="#" class="notiplus"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <ul class="tab-menu">
+                <li><a href="/html/Theater/theater.html">상영시간표</a></li>
+                <li><a href="/html/Theater/theater_location.html" class="tab-location">위치/주차안내</a></li>
+            </ul>
+
+            <div class="theater-name">UM 강남</div>
+
+          
+
+            <div class="transportation-schedule">
+                <div class="bus-train-schedule">
+                    <div class="trans-title">
+                        <span class="bus-image"></span>
+                        <span>교통안내</span>
+                        <a href="#" class="trans-map" style="color:white">네이버 지도</a>
+                    </div>
+                    <div class="trans-info">
+                        <p> # 지하철 <br>
+                            - 2호선 강남역 11번 출구 도보 5분 <br>
+                            - 9호선 신논현역 5번 출구 도보 5분 <br>
+                            - 신분당선 신논현역 6번 출구 도보 3분 <br>
+                        </p>
+
+                        <p> # 버스 <br>
+                            - 간선버스 : 140, 144, 145, 146, 360, 400, 402, 420, 421, 440, 441, 452, 470, 542, 640, 643, 741 <br>
+                              심야) N13, N31, N37, N75 <br>
+                            - 지선버스 : 3412, 4312, 8146, 8541 <br>
+                            - 광역버스 : 1005, 1100, 1101, 1151, 1241, 1311, 1311B, 1550, 1550-1, 1551, 1551B, 1552, 1560, 1570, 1700, 2000, 2000-1, 3008, 3030, 3100, 3401, 3600, 4403, 5001, 5001-1, 5002A, 5002B, 5003A, 5003B,5006, 5100, 5200, 5300, 6001, 6002, 6002-1, 6004, 6427, 6600, 7007, 8001, 8502, 9004, 9202, 9303, 9400, 9404, 9408, 9409, 9500, 9501, 9600, 9700, 9711, 9800, 9802, G5100,G7426, M4403, M4434, M4448, M4449, M5422, M5438, M6427, M7412, P9201, 이음2 <br>
+                            - 마을버스 : 서초03 <br>
+                            - 공항버스 : 6009 <br>
+                        </p>
+                    </div>
+                    <div class="trans-title">
+                        <span class="park-image"></span>
+                        <span>주차안내</span>
+                    </div>
+                    <div class="trans-info">
+                        <p>
+                            # 주차정보 <br>
+                            - 위치: 건물 지하2F ~ 지하4F <br>
+                        </p>
+                        <p>
+                            # 주차요금 <br>
+                            - CGV 영화 관람 시 주차 3시간 6,000원 <br>
+                            - 주차시간 (3시간) 초과 시 10분 당 1,000원 <br>
+                            ※ 발렛서비스 운영시간 : 오전 8시 이후 ~ 오후 20시 <br>
+                            ※ 발렛 무료 서비스는 영화 관람 고객 한 함.  (영화 미관람 시 건물 주차장에서 별도 정산) <br>
+                            ※ 20시 이후 입차 차량은 발렛서비스 이용이 제한될 수 있으며, 별도 운영되는 주차팀의 사정에 따라 변경될 수 있습니다. <br>
+                        </p>
+                        <p>
+                            # 이용안내 <br>
+                            - 주차공간이 협소하여 평일 오후/주말은 주차가 어렵습니다. <br>
+                            - 편리한 대중교통 이용을 이용하여 주시기 바랍니다. <br>
+                        </p>
+                    </div>
+                </div>
+
+                <script>
+                    var loca = document.querySelector(".trans-map");
+                    loca.onclick = function () {
+                        window.open ("GPS.html", "GPS", "width=700, height=700, left=200, top=200")
+                    }
+    
+                </script>
+            
+
+                <div class="ad-banner">
+                    <img src="/Theator_img/ad_next_cal.png">
+                    <img src="/Theator_img/ad_next_cal2.png">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="footer"></div>
+</body>
+</html>

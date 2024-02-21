@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/join.css">
+    <script src="https://kit.fontawesome.com/580a20ac80.js" crossorigin="anonymous"></script>
+    <script src="/jquery-3.7.1.min.js"></script>
+    <script>$(function(){$("#header").load("/html/include/header.html");$("#footer").load("/html/include/footer.html");});</script>
+    <title>Join</title>
+</head>
+<body>
+    <div id="header"></div>
+
+    <section>
+
+        <div class="join__background">
+
+            <div class="join__outerBox">
+
+                <form class="join__Box">
+
+                    <p> <i class="fas fa-solid fa-j fa-beat" style="color: #ebe8e8;"></i>회원가입 </p>
+
+                    <div class="inputId">
+                        <i class="fas fa-regular fa-user"></i>
+                        <input type="text" name="id" placeholder="아이디를 입력하세요.">
+                    </div>
+
+                    <div class="inputPw">
+                        <i class="fas fa-solid fa-key"></i>
+                        <input type="password" name="pw" placeholder="비밀번호를 입력하세요.">
+                    </div>
+
+                    <div class="inputPwCheck">
+                        <i class="fas fa-solid fa-key"></i>
+                        <input type="password" name="checkPw" placeholder="비밀번호를 다시 입력하세요.">
+                    </div>
+
+                    <div class="inputName">
+                        <i class="fas fa-solid fa-pen"></i>
+                        <input type="text" name="name" placeholder="이름을 입력하세요.">
+                    </div>
+
+                    <div class="inputPhone">
+                        <div class="input__phone__info">
+
+                            <div class="input__phone__word"><span>*Phone</span></div>
+                            <input type="text" name="phone1" maxlength="3">
+                            <span class="hippen"> - </span>
+                            <input type="text" name="phone2" maxlength="4">
+                            <span class="hippen"> - </span>
+                            <input type="text" name="phone3" maxlength="4">
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div class="inputAddress">
+                        <i class="fas fa-solid fa-house"></i>
+                        <input type="text" name="address" placeholder="주소를 입력하세요.">
+                    </div>
+                    
+                    <div class="inputButton">
+                        <button type="submit">회원가입</button>
+                        <button type="reset">초기화</button>
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div id="footer"></div>
+</body>
+</html>

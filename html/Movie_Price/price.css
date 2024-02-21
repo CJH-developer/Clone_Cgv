@@ -1,0 +1,40 @@
+
+.price {width:980px; margin: 0 auto; margin-top: 20px;}
+.price-header {display: flex; justify-content: space-between; border-bottom: 3px solid black; padding:20px 0;}
+.price-header:last-child {font-size: 20px;}
+.price-title {font-size: 35px; font-weight: 550;}
+
+.price-region {color:black; text-decoration: none;}
+.price-theater {color:rgb(231, 156, 143); text-decoration: none;}
+
+
+/* --------------------- 지역선택 ---------------------*/
+.select-region {padding:50px; display: flex; justify-content: center; align-items: center; }
+.region_class01 {margin-right: 20px; border: none; width: 150px; font-size: 25px;}
+.region_class02 {margin-right: 20px; border: none; width: 350px; font-size: 25px;}
+.select-region .border2 {border-left: 1px solid rgb(221, 197, 160); padding-left: 10px; border-bottom: 2px solid rgb(231, 156, 143);}
+.select-region .border1 {border-bottom: 2px solid rgb(231, 156, 143);}
+
+
+/* --------------------- 요금표 ---------------------*/
+.price-list{display: flex;}
+.price-list:last-child {margin-top: 60px;}
+.price-table{padding:10px 30px; width:100%; font-size: 12px; border-collapse: collapse;}
+.price-head {font-weight: 300;}
+.price-list .norm-2d {width: 50%; font-size: 14px; font-weight: 800;}
+.price-list .norm-3d {width: 50%; font-size: 14px; font-weight: 800; margin-left: 30px;}
+
+.price-body {font-weight: 400;}
+.price-body tr {text-align: center;}
+.price-body > tr > td {padding:7px;}
+.price-body tr:last-child{border-bottom: 1px solid #ccc;}
+.price-head th {border-bottom: 1px solid #ccc; padding: 15px 0 5px 0;}
+
+/* --------------------- 요금 가이드  ---------------------*/
+.price-footer {width:980px; margin: 0 auto;}
+.price-guide1 {font-weight:700; font-size: 13px; margin-top: 50px; color:#666;}
+.price-guide2 {font-weight:700; font-size: 13px; padding-top: 10px; color:#666;}
+.price-guide3 {font-weight:700; font-size: 12px; margin-top: 10px; border-bottom: 2px solid #ab9c8f; color:#666;}
+.price-guide2 > span {color:#ab9c8f;}
+
+

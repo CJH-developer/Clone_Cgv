@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/popup2.css">
+    <script src="https://kit.fontawesome.com/580a20ac80.js" crossorigin="anonymous"></script>
+    <title>닉네임 변경팝업</title>
+</head>
+<body>
+        <div class="wrapper">
+
+            <div class="wrapper__header"><span>나의 프로필 수정</span></div>
+            <div class="wrapper__body">
+
+                <div class="body__body">
+
+                    <div class="body__change__nickName">
+
+                        <div class="change__nickName__title"><span>닉네임</span></div>
+                        <div class="change__nickName__info">
+                            <span>한글, 영문, 숫자 혼용 가능(한글 기준 10자 이내)</span>
+                            <div class="change__NickName__input">
+                                <input type="text" placeholder="session.nickname">
+                                <button type="button">중복 확인</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="body__change__profile">
+
+                        <div class="change__profileName__title"><span>프로필 사진 변경</span></div>
+
+                        <div class="change__profile__img">
+                            <img src="/img/default_profile.gif" alt="기본이미지">
+                            <span>JPG, GIF, BMP 파일만 등록 가능합니다.(최대 3M)</span>
+                            <div class="profile__img__select">
+                                <button type="button">파일 선택</button>
+                                <span>선택된 파일 없음</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="body__change__button">
+                        <button type="button" value="확인" id="btn1" onclick="window.close();" >등록하기</button>
+                        <button type="button" value="확인" id="btn2" onclick="window.close();">취소</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+    
+        </div>
+</body>
+</html>

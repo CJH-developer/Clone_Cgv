@@ -1,0 +1,84 @@
+*{margin: 0; padding: 0;}
+.wrapper{display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.wrapper__header{display: flex; background-color: rgb(44, 43, 43); width: 100%; padding: 20px 0px; padding-left: 50px; }
+.wrapper__header span{color: white; font-size: 25px; font-weight: 700;}
+.wrapper__body{display: flex; width: 100%; padding: 20px 0px; padding-left: 50px; }
+.body__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body__change__nickName, .body__change__profile{display: flex;}
+
+.body__change__nickName{margin-top: 50px;margin-bottom: 50px;}
+
+.change__nickName__title span{font-weight: 700;}
+
+.change__nickName__info{display: flex;flex-direction: column;}
+
+.change__nickName__info span{margin-bottom: 10px;}
+
+.change__nickName__title{margin-left: 10px;margin-right: 100px;}
+
+.change__NickName__input input{width: 300px;height: 30px;border: 1px solid rgb(207, 205, 205);padding-left: 20px;}
+
+.change__NickName__input button{width: 80px;height: 35px;font-weight: 600;cursor: pointer;}
+
+.change__NickName__input button:hover{background-color: rgb(228, 228, 226);}
+
+
+/********************************************************************************************************************************/
+
+
+.body__change__profile{
+    margin-top: 50px; margin-bottom: 50px;
+}
+
+.change__profileName__title{
+    margin-right: 30px;
+}
+
+.change__profile__img{
+    display: flex;
+    flex-direction: column;
+}
+
+.change__profile__img img{
+    border-radius: 200px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.change__profile__img span{
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.profile__img__select button{
+    width: 80px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/***********************************************************************************************************************************/
+
+.body__change__button{
+    display: flex;
+    width: 220px;
+    justify-content: space-between;
+}
+
+.body__change__button button{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.body__change__button #btn1{
+    background-color: black;
+    color: white;
+    font-weight: 700;
+}
+

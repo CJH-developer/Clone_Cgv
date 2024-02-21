@@ -1,0 +1,513 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    width: 100%;
+}
+
+a, span, li, p, button, input{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    outline: none;
+    list-style: none;
+}
+
+a, a:visited, a:active, a:link{
+    text-decoration : none;
+    color: black;
+}
+
+a, button{
+    cursor: pointer;
+}
+
+/********************************************************************************************/
+
+.wrapper{display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative;}
+.wrapper__header{display: flex;justify-content: flex-end;width: 980px;margin-top: 30px;}
+
+/*************  버튼 *******************************************************/
+.wrapper__header__button{display: flex;align-items: center;justify-content: center;}
+.wrapper__header__button button{margin: 0px 2px;border-radius: 7px;}
+#english{display: flex;align-items: center;justify-content: center;width: 80px;height: 30px;}
+#time{display: flex;align-items: center;justify-content: center;height: 30px;}
+#time span{font-size: 14px;}
+#reserveR{display: flex;align-items: center;justify-content: center;width: 120px;height: 30px;}
+#reserveR span{font-size: 14px;}
+.wrapper__header__button > button > span{font-size: 13px;font-weight: bold;}
+
+/************** container header *********************************************/
+.wrapper__container{display: flex;width: 1280px; margin-top: 10px;}
+.container__center{display: flex;flex-direction: column; width: 980px; border: 2px solid gray;}
+.container__center__header{display: flex;background-color: black;}
+.center__header__content{display: flex; width: 100%; align-items: center;}
+.center__header__content span{color: white;}
+
+.movie__select{padding: 5px 0px;width: 27%;text-align: center;border-right: 3px solid gray;}
+.theator__select{padding: 5px 0px;width: 27%;text-align: center;border-right: 3px solid gray;}
+.date__select{padding: 5px 0px;width: 12%;text-align: center;border-right: 3px solid gray;}
+.time__select{padding: 5px 0px;width: 34%;text-align: center;}
+
+/************** 배너 *********************************************************/
+.container__left{padding-right: 5px;}
+.container__right{padding-left: 5px;}
+.container__left img{width: 150px;cursor: pointer;}
+.container__right img{width: 150px;cursor: pointer;}
+
+/************** wrapper footer *********************************************/
+.wrapper__footer{width: 100%;height: 120px;background-color: black;display: flex; flex-direction: column; align-items: center;justify-content: center;}
+.wrapper__footer__content{width: 980px;height: 100%;display: flex; align-items: center;}
+.wrapper__footer__content{display: flex;flex-direction: row;color: white;}
+.footer__content__back, .footer__content__go, .footer__content__movie, .footer__content__seat{display: flex;align-items: center;justify-content: center;}
+.back__button, .go__button{display: flex;flex-direction: column;align-items: center;justify-content: center;border: 1px solid gray;border-radius: 8px;padding: 15px 15px;background-color: rgb(59, 59, 59);cursor: pointer;  width: 60px;height: 60px;}
+.go__button{margin-left: 20px;}
+.go__button i, .go__button span{
+    color: white;
+}
+.back__button:hover, .go__button:hover{border: 3px solid gray;}
+.back__button i, .go__button i{font-size: 50px;}
+.footer__content__movie{display: flex;margin-left: 20px;height: 100%;}
+.movie__img img{width: 70px;height: 100px;}
+.movie__info{display: flex;flex-direction: column;width: 110px;height: 80%;justify-content: space-between;margin-left: 10px;border-right: 1px solid gray;}
+.movie__info > a:hover{text-decoration: underline white;}
+.movie__info > a > span{color: white;}
+.movie__info span{font-size: 13px;}
+.footer__content__date{display: flex;flex-direction: column;margin-left: 20px;height: 80%;width: 200px;border-right: 1px solid gray;justify-content: space-between;}
+.date__theator, .date__Date, .date__location, .date__count{display: flex;}
+.theator__location > a:hover{text-decoration: underline white;}
+.theator__location > a> span{color: white;}
+.theator, .date, .location, .count{width: 60px;}
+.theator span, .date span, .location span, .count span{font-size: 13px;}
+.theator__location a > span, .date__time span , .location__floor span, .count__select span{font-size: 13px;}
+.footer__content__seat{display: flex;flex-direction: column;height: 80%;width: 150px;border-right: 1px solid gray;}
+.seat__title{display: flex;}
+.seat__title span{font-size: 13px;padding: 0px 5px;}
+.seat__choice{margin-top: 10px;font-size: 30px;}
+.footer__content__price{display: flex;flex-direction: column;margin-left: 20px;width: 150px;padding-right: 20px;}
+.price__list, .price__total{display: flex;justify-content: space-between;}
+.list span, .price span, .total span, .total__price span{font-size: 13px;}
+.total__price span{color: red;}
+.wrapper__footer__banner{margin-top: 30px;}
+
+/************** 내부 *********************************************************/
+
+.cotainer__center__body{display: flex;width: 980px;}
+.center__body__movie{display: flex;flex-direction: column;padding-top: 20px;width: 27%;border-right: 3px solid gray;}
+.all{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 25px;
+    font-size: 13px;
+    border: 3px solid black;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.all span{font-size: 13px;}
+.art__house select, .special select{
+    width: 80px;
+    height: 28px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 12px;
+    border: 2px solid gray;
+    border-bottom: 3px solid black;
+    cursor: pointer
+}
+.art__house select:focus, .special select:focus{outline: none;}
+.art__house > select > option, .special > select > option{background-color: black;color: white;padding: 10px 5px;}
+.body__movie__button{display: flex;padding-left: 25px;}
+.center__body__theator{width: 27%;border-right: 3px solid gray;}
+.center__body__date{width: 12%;border-right: 3px solid gray;}
+.center__body__times{width: 34%;}
+
+.body__movie__select{
+    display: flex;
+    width: 80%;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(194, 192, 192);
+    margin-left: 25px;
+}
+
+.body__movie__select span{font-size: 13px;}
+.movie__select__reserve{cursor: pointer;margin-left: 5px;}
+.movie__select__orderBy{margin-left: 10px;cursor: pointer;}
+.body__movie__list{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 370px;
+    overflow: auto;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    margin-left: 25px;
+}
+
+.body__movie__list::-webkit-scrollbar{
+    background-color: white;
+    height: 100%;
+    width: 10px;
+    overflow: auto;
+}
+
+.body__movie__list::-webkit-scrollbar-thumb{
+    height: 20%;
+    background-color: rgb(216, 213, 213);
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+.body__movie__list::-webkit-scrollbar-track{
+    background:-color white;
+
+}
+
+.movie__list{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.movie__list:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.list__age12{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    border: 1px solid rgb(236, 162, 23);
+    background-color: rgb(236, 162, 23);
+    border-radius: 5px;
+}
+
+.list__age15{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    border: 1px solid rgb(236, 83, 23);
+    background-color: rgb(236, 83, 23);
+    border-radius: 5px;
+}
+
+.list__age19{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    border: 1px solid rgb(206, 53, 15);
+    background-color: rgb(206, 53, 15);
+    border-radius: 5px;
+}
+
+.list__ageAll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    border: 1px solid rgb(33, 167, 6);
+    background-color: rgb(33, 167, 6);
+    border-radius: 5px;
+}
+
+.list__age12 span{
+    padding-bottom: 2px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+}
+
+.list__age15 span{
+    padding-bottom: 2px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+}
+
+.list__age19 span{
+    padding-bottom: 2px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+}
+
+.list__ageAll span{
+    padding-bottom: 2px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+}
+
+.list__movie__name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    margin-bottom: 4px;
+}
+
+.list__movie__name{
+    font-weight: 600;
+}
+
+/*********theator 버튼************************/
+
+.center__body__theator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    width: 27%;
+    border-right: 3px solid gray;
+}
+
+.body__theator__button{
+    display: flex;
+}
+
+.theator__all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 25px;
+    border: 3px solid black;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.theator__art__house, .theator__special{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 25px;
+    border: 1px solid gray;
+    border-bottom: 3px solid black;
+    cursor: pointer;
+}
+
+.theator__all span, .theator__art__house span, .theator__special span{
+    font-size: 13px;
+}
+
+
+.body__theator__list{
+    display: flex;
+    width: 80%;
+    height: 400px;
+}
+
+.body__list__left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.body__list__left div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5px 1px;
+    height: 20px;
+    padding-top: 10px;
+    background-color: rgb(243, 239, 239);
+    cursor: pointer;
+}
+
+.list__left__one span{
+    font-size: 10px;
+}
+
+.body__list__right{
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+.body__list__right::-webkit-scrollbar{
+    background-color: white;
+    overflow: auto;
+    width: 10px;
+    height: 100%;
+}
+
+.body__list__right::-webkit-scrollbar-thumb{
+    height: 20%;
+    background-color: rgb(216, 213, 213);
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+.body__list__right::-webkit-scrollbar-track{
+    background:-color white;
+
+}
+
+.body__list__right div{
+    padding: 3px 0px;
+}
+
+.list__right__one span{
+    font-size: 13px;
+}
+
+
+/**********************************************************/
+
+.center__body__date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12%;
+}
+
+.body__date__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.body__date__title p{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.body__date__title span{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.body__date__day{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 80%;
+    height: 370px;
+    overflow: auto;
+}
+
+.body__date__day div{
+    padding: 5px 0px;
+}
+
+.body__date__day::-webkit-scrollbar{
+    width: 10px;
+    background-color: white;
+    overflow: auto;
+    height: 100%;
+}
+
+.body__date__day::-webkit-scrollbar-thumb{
+    height: 20%;
+    background-color: rgb(216, 213, 213);
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+.date__day{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.date__day span{
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+.date__day p {
+    font-size: 17px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+}
+
+.date__day:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.date__day.active{
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+
+
+/***********************************************************/
+
+
+.center__body__times{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 34%;
+}
+
+.body__times__today{
+    display: flex;
+    margin-top: 20px;
+    width: 80%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.morning i{
+    color: rgb(238, 67, 67);
+    font-size: 13px;
+}
+
+.morning span{
+    font-size: 13px;
+}
+
+.night{
+    margin-left: 10px;
+}
+
+.night i{
+    color: rgb(161, 159, 19);
+    font-size: 13px;
+}
+
+.night span{
+    font-size: 13px;
+}
+
+.movie__day__list{
+    height: 370px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie__day__list span{
+    font-size: 14px;
+    color: gray;
+}

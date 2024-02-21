@@ -1,0 +1,77 @@
+ul, li, ol {list-style: none;}
+a {color: black; text-decoration: none; }
+
+/* ----------------------- 전체 플렉스 ----------------------- */
+.showtime {display:flex; width:980px; margin: 0 auto; margin-top: 20px;}
+
+/* ----------------------- 오른쪽 광고 ----------------------- */
+.showtime .ad-banner{display: flex; flex-direction: column; width:20%;}
+.showtime .ad-banner img {margin-bottom: 10px; margin-left: 30px;}
+
+/* ----------------------- 왼쪽 날짜 ----------------------- */
+.movie-schedule{display:flex; width: 80%;}
+.schedule-wrapper {display:flex; flex-direction: column; border-top: 3px solid black; border-bottom: 2px solid black; width: 100%;}
+
+.calendar-date {display:flex; align-items: center; justify-content: space-evenly;}
+.calendar-date .finger-left {background: url(/Theater_img/sprite_btn.png) -117px -174px no-repeat; width: 54px; height: 19px;}
+.calendar-date .finger-right {background: url(/Theater_img/sprite_btn.png) -117px -155px no-repeat; width: 54px; height: 19px;}
+.date-info > a {display: flex; align-items: center; padding:10px;}
+.date-info .date-column {color: rgb(144, 144, 144); display:flex; flex-direction: column; align-items: center; margin-right: 5px;}
+.date-info .date {font-size: 35px; color: rgb(144, 144, 144)}
+.descri-info {border-bottom: 2px solid black; padding-bottom: 10px;}
+.descri-info > ul {display: flex; justify-content: flex-end;}
+.descri-info > ul > li {padding-left: 18px;}
+.descri-info > ul > li > a {
+    font-size: 11px;
+    font-weight: 800;
+    padding-left: 18px;
+    background-position: 0 -156px; 
+    background-image: url(/Theater_img/sprite_icon.png); 
+    background-repeat: no-repeat; 
+}
+
+/* ----------------------- 왼쪽 모닝 심야 ----------------------- */
+.guide{padding: 10px; border-bottom: 1px solid black;}
+.guide .morning{
+    background-image: url(/Theater_img/sprite_icon.png);
+    background-position: 0 -172px;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.guide .night{
+    background-image: url(/Theater_img/sprite_icon.png);
+    background-position: 0 -192px;
+    background-repeat: no-repeat;
+    margin-left: 1dvb;
+    padding-left: 14px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* ----------------------- 왼쪽 영화 시간 상세 ----------------------- */
+.movie-wrapper {display: flex; flex-direction: column; padding: 50px 20px;}
+.movie-name {display:flex; align-items: center;}
+.movie-name .age12{background-image: url(/Theater_img/age_12.png); background-repeat: no-repeat; width: 10px; height:10px; padding-left: 20px; padding-top: 10px;}
+.movie-name .age15{background-image: url(/Theater_img/age_15.png); background-repeat: no-repeat; width: 10px; height:10px; padding-left: 20px; padding-top: 10px;}
+.movie-name .ageAll{background-image: url(/Theater_img/age_all.png); background-repeat: no-repeat; width: 10px; height:10px; padding-left: 20px; padding-top: 10px;}
+.movie-name .movie-title {font-size: 16px; font-weight: bold;}
+.movie-name .movie-onair {padding: 1px; font-size: 12px; margin-left: 7px; color:#3e82a4; border:2px solid #3e82a4}
+.movie-name .movie-genre {font-size: 11px; margin-left:10px;}
+
+.movie-type {margin:20px; font-size: 10px;}
+.movie-type .t1 {border-right: 1px solid rgb(124, 124, 124); padding-right:7px;}
+.movie-type .t2 {border-right: 1px solid rgb(124, 124, 124); padding-right:7px; padding-left: 5px;}
+.movie-type .t3{padding-left: 5px;}
+
+.movie-showtime {margin-left: 20px; display: flex;}
+.showtime-info {border: 1px solid black; width: 80px; }
+.showtime-info > a {display: flex; flex-direction: column; font-size: 12px; justify-content: center; align-items: center; }
+.showtime-info > a > span {padding:3px;}
+.showtime-info > a > span:first-child {font-weight: 1000;}
+.showtime-info > a > span:last-child {color:rgb(88, 88, 204)}
+
+.movie-wrapper {border-bottom: 1px solid black;}
+
+

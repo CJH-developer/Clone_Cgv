@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css(지원)/main.css">
+    <link rel="stylesheet" href="/css(지원)/movieinfo.css">
+    <link rel="stylesheet" href="/css(지원)/movieChart.css">
+    <script src="https://kit.fontawesome.com/580a20ac80.js" crossorigin="anonymous"></script>
+    <script src="/jquery-3.7.1.min.js"></script>
+    <script>$(function(){$("#header").load("/html/include/header.html");$("#footer").load("/html/include/footer.html");});</script>
+    <script src="/js/movieinfo.js" defer></script>
+    <title>Walker</title>
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <div class="container">
+            <div class="contents">
+                <div class="sect-base-movie" style="width: 100%;">
+
+                    <div class="box-image">
+                        <!-- 표지 누르면 큰 이미지로 이동 -->
+                        <a href="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000087/87971/87971_1000.jpg">
+                            <span class="thumb-image">
+                                <!-- 표지 이미지 교체 -->
+                                <img src="/img2/blackguy.jpg" alt="">
+                            
+                                    <span class="poster-bigger"></span>
+                            
+                                    <i class="icon"></i>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="box-contents">
+                        <!-- 제목이랑, 설명 -->
+                        <div class="title">
+                            <strong>검은 소년 </strong>
+                            <span>예매중</span>
+                            <p>Walker</p>
+                        </div>
+
+                        <div class="score">
+                            <!-- 예매율 -->
+                            <strong class="percent">
+                                예매율
+                                <span>0.4%</span>
+                            </strong>
+
+                            <i class="middle-border"></i>
+
+                            <div class="egg">
+                                <span class="egg-image">
+                                    <!-- 알 -->
+                                    <img src="/img2/justegg.png" alt="">
+                                </span>
+
+                                <span class="percent">
+                                    85%
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="details">
+                            <ul>
+                                <li>
+                                    <span>
+                                        감독 : 서정원 / 프로듀서 : 유재경 ,  김동우 ,  나경찬 / 배우 : 
+                                        안지호 ,  안내상 ,  윤유선
+                                    </span>
+                                </li>
+                                
+                                <li>
+                                    <span>
+                                        장르 : 드라마 / 기본 정보 : 
+                                        15세이상관람가, 88분, 한국
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <span>
+                                        개봉 : 2024.02.07
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <span class="reserve">
+                            <a href="#"></a>
+                        </span>
+
+                        <span class="screentype">
+                            <a href="" class="imax"></a>
+                        </span>
+
+                    </div>
+                </div>
+
+
+                <div class="cols-content">
+                    <div class="col-detail">
+                        <ul class="tab-menu">
+                            <li>
+                                <a href="#">주요정보</a>
+                            </li>
+
+                            <li>
+                                <a href="#">트레일러</a>
+                            </li>
+
+                            <li>
+                                <a href="#">스틸컷</a>
+                            </li>
+
+                            <li>
+                                <a href="#">평점/리뷰</a>
+                            </li>
+
+                            <li>
+                                <a href="#">상영시간표</a>
+                            </li>
+
+                        </ul>
+
+                        <div class="sect-story-movie">
+                            선택을 강요하는 폭력적인 아빠와 가족을 떠나버린 엄마,<br>
+                            끊임없이 괴롭히는 동급생까지 고등학생 '훈'은 어디에도 기댈 곳이 없다.<br>
+                            문학동아리에서 책을 읽고 작은 수첩에 자신만의 이야기를 쓰며 겨우 숨통을 트던 '훈'에게 아빠는 자꾸만 엄마의 행방을 묻고,<br>
+                            '훈' 역시 끊임없는 폭력 속에서 점차 날카로워지는데...
+                        </div>
+
+                        <!-- 바꿀 필요 x -->
+                        <div class="chart" style="margin-top: 40px;">
+                            <ul class="graph">
+                                <li class="left">
+                                    <strong>성별 예매 분포</strong>
+                                    <img src="/img2/paragraph_gender.png" alt="">
+                                </li>
+
+                                <li class="right">
+                                    <strong>연령별 예매 분포</strong>
+                                    <img src="/img2/paragraph_age.png" alt="">
+                                </li>
+
+                            </ul>
+                        </div>
+                        
+                        <div class="ad-mid">
+                            <img src="/img2/demonslayer-midad.jpg" alt="">
+                        </div>
+
+                        <div class="trailer-secter">
+                            <div class="trailer-heading">
+                                <strong>트레일러</strong>
+                                <small class="trailercount">1건</small>
+                            </div>
+                            <!-- 여기까지 바꿀필요 x -->
+
+                            <ul class="trailer-main">
+
+                                <!-- 복사할거면 여기부터 -->
+                                <li class="image-wrap">
+                                    <div class="trailer-image">
+                                        <a href="#">
+                                            <span class="img-wrrap">
+                                                <!-- 트레일러 썸네일, js랑 연결돼있어서 src 이름 잘 걸어야함 -->
+                                                <img src="/img2/trailer_walker1.jpg" alt="">
+                                            
+                                                <span class="playbtn"></span>
+
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="trailer-contents">
+                                            <a href="#">
+                                                <strong>HD</strong>
+                                                <span>30초 예고편</span>
+                                            </a>
+                                            <div class="trailer-contents-div">2024.01.19</div>
+                                    </div>
+                                </li>
+                                <!-- 여기까지 -->
+
+                                <li class="image-wrap">
+                                    <div class="trailer-image">
+                                        <a href="#">
+                                            <span class="img-wrrap">
+                                                <!-- 트레일러 썸네일, js랑 연결돼있어서 src 이름 잘 걸어야함 -->
+                                                <img src="/img2/trailer_walker2.jpg" alt="">
+                                            
+                                                <span class="playbtn"></span>
+
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="trailer-contents">
+                                            <a href="#">
+                                                <strong>HD</strong>
+                                                <span>메인 예고편</span>
+                                            </a>
+                                            <div class="trailer-contents-div">2024.01.19</div>
+                                    </div>
+                                </li>
+
+                                <li class="image-wrap">
+                                    <div class="trailer-image">
+                                        <a href="#">
+                                            <span class="img-wrrap">
+                                                <!-- 트레일러 썸네일, js랑 연결돼있어서 src 이름 잘 걸어야함 -->
+                                                <img src="/img2/trailer_walker3.jpg" alt="">
+                                            
+                                                <span class="playbtn"></span>
+
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="trailer-contents">
+                                            <a href="#">
+                                                <strong>HD</strong>
+                                                <span>티저 예고편</span>
+                                            </a>
+                                            <div class="trailer-contents-div">2024.01.19</div>
+                                    </div>
+                                </li>
+                                
+
+
+                        </div>
+
+
+                        <div class="stillcut-sector">
+                            <div class="trailer-heading">
+                                <strong>스틸컷</strong>
+                                <!-- JS연결(안 바꿔도 알아서 됨) -->
+                                <small class="stillcutcount">1/13건</small>
+                            </div>
+
+                            <div class="slider-wrap">
+                                <div class="slider">
+                                    <!-- 스틸컷들 이미지 경로 다 바꿔주기 -->
+                                    <div class="item-wrap on">
+                                        <div class="item" style="width: 800px; height: 450px; display: block;  margin: 20px 0px 20px 0px;">
+                                            <img src="/img2/stillcut_walker1.jpg">
+                                        </div>
+                                    </div>
+                            
+                                    <div class="item-wrap">
+                                        <div class="item" style="width: 800px; height: 450px; display: block;  margin: 20px 0px 20px 0px;">
+                                            <img src="/img2/stillcut_walker2.jpg">
+                                        </div>
+                                    </div>
+
+                                    <div class="item-wrap">
+                                        <div class="item" style="width: 800px; height: 450px; display: block;  margin: 20px 0px 20px 0px;">
+                                            <img src="/img2/stillcut_walker3.jpg">
+                                        </div>
+                                    </div>
+
+                                    <div class="item-wrap">
+                                        <div class="item" style="width: 800px; height: 450px; display: block;  margin: 20px 0px 20px 0px;">
+                                            <img src="/img2/stillcut_walker4.jpg">
+                                        </div>
+                                    </div>
+
+                                    <div class="item-wrap">
+                                        <div class="item" style="width: 800px; height: 450px; display: block;  margin: 20px 0px 20px 0px;">
+                                            <img src="/img2/stillcut_walker5.jpg">
+                                        </div>
+                                    </div>
+
+                                    <div class="item-wrap">
+                                        <div class="item" style="width: 800px; height: 450px; display: block;  margin: 20px 0px 20px 0px;">
+                                            <img src="/img2/stillcut_walker6.jpg">
+                                        </div>
+                                    </div>
+
+                                    <div class="item-wrap">
+                                        <div class="item" style="width: 800px; height: 450px; display: block;  margin: 20px 0px 20px 0px;">
+                                            <img src="/img2/stillcut_walker7.jpg">
+                                        </div>
+                                    </div>
+
+                                    <div class="item-wrap">
+                                        <div class="item" style="width: 800px; height: 450px; display: block;  margin: 20px 0px 20px 0px;">
+                                            <img src="/img2/stillcut_walker8.jpg">
+                                        </div>
+                                    </div>
+
+                                    <div class="item-wrap">
+                                        <div class="item" style="width: 800px; height: 450px; display: block;  margin: 20px 0px 20px 0px;">
+                                            <img src="/img2/stillcut_walker9.jpg">
+                                        </div>
+                                    </div>
+
+                                    <div class="item-wrap">
+                                        <div class="item" style="width: 800px; height: 450px; display: block;  margin: 20px 0px 20px 0px;">
+                                            <img src="/img2/stillcut_walker10.jpg">
+                                        </div>
+                                    </div>
+
+                                    <div class="item-wrap">
+                                        <div class="item" style="width: 800px; height: 450px; display: block;  margin: 20px 0px 20px 0px;">
+                                            <img src="/img2/stillcut_walker11.jpg">
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn-prev"></button>
+                                    <button type="button" class="btn-next"></button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- 완전 반대, 건들 ㄴㄴ -->
+                    <div class="col-aside">
+                        <div class="ad-first">
+                            <a href=""><img src="/img2/dragonslayer_advertisement.jpg" alt=""></a>
+                        </div>
+
+                        <div class="ad-second">
+                            <a href=""><img src="/img2/samsung_advertisement.png" alt=""></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                    
+                    
+                </div>
+
+
+    </div>
+
+    <div id="footer"></div>
+
+</body>
+</html>

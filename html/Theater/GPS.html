@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=s3rd6qo8j0"></script>
+    <style>
+        .location {text-align: center; display: flex; flex-direction: column;} 
+        .span {font-size: 30px; font-weight: bold; padding: 20px;}
+        .close{}
+        #map {width:70%; height:500px; margin: 0 auto;}
+    </style>
+    
+</head>
+<body>
+    <div class="location">
+        <span class="span"> UM 강남</span>
+        <div id="map" style="width:70%;height:500px; margin: 0 auto;"></div>
+        <input type="checkbox" onclick="window.close();" class="close">더 이상 열지 않기
+    </div>
+
+    <script>
+        //37.5016826, 127.0262967
+        var position = new naver.maps.LatLng(37.5016826, 127.0262967);
+        var map = new naver.maps.Map('map', {
+            center: position,
+            zoom: 15
+        });
+        
+
+
+        var symbolMarker = new naver.maps.Marker({
+            map: map,
+            position: new naver.maps.LatLng(37.5016826, 127.0262967),
+            title: 'symbolMarker',
+            icon: {
+                path: [
+                    new naver.maps.Point(0, 70), new naver.maps.Point(20, 100), new naver.maps.Point(40, 70),
+                    new naver.maps.Point(30, 70), new naver.maps.Point(70, 0), new naver.maps.Point(10, 70)
+                ],
+                style: "closedPath",
+                anchor: new naver.maps.Point(23, 103),
+                fillColor: '#ff0000',
+                fillOpacity: 1,
+                strokeColor: '#000000',
+                strokeStyle: 'solid',
+                strokeWeight: 3
+            },
+            shape: {
+                coords: [0, 70, 20, 100, 40, 70, 30, 70, 70, 0, 10, 70],
+                type: "poly"
+            },
+            animation: naver.maps.Animation.BOUNCE
+        });
+
+        
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Orbit', sans-serif;
+}
+
+a, button, li{
+    cursor: pointer;
+}
+
+a, a:visited, a:active, a:link{
+    text-decoration : none;
+    color: black;
+}
+
+a, span{
+    outline: none;
+    font-family: 'Orbit', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+.login__background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login__background__outerBox{
+    display: flex;
+    flex-direction: column;
+    width: 1300px;
+}
+
+.login__background__above{
+    display: flex;
+    margin-top: 50px;
+}
+
+.background__above__content{
+    display: flex;
+}
+
+.login__left{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    padding-bottom : 40px;
+    border-bottom: 3px solid gray;
+}
+
+/* 상단 로그인/비회원로그인/비회원예약조회 버튼 style */
+.login__left__above{
+    display: flex;
+    border-bottom: 3px solid gray;
+}
+
+.login__left__above div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 2px;
+    border: 1px solid gray;
+    width: 130px;
+    height: 40px;
+    background-color: gray;
+    color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+}
+
+.above__member__login.active{
+    background-color: rgb(238, 70, 70);
+    border: 1px solid rgb(238, 70, 70);
+}
+
+.above__noMember__login.active{
+    background-color: rgb(238, 70, 70);
+    border: 1px solid rgb(238, 70, 70);
+}
+
+.above__noMember__reserveCheck.active{
+    background-color: rgb(238, 70, 70);
+    border: 1px solid rgb(238, 70, 70);
+}
+
+
+.login__left__below{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left__below__span{
+    font-family: 'Orbit', sans-serif;
+    margin-top: 40px;
+    font-size: 17px;
+    font-weight: 550;
+}
+
+.left__below__loginInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.left__below__loginInfo input{
+    width: 300px;
+    height: 50px;
+    margin: 5px 0px;
+    border: 3px solid rgb(209, 207, 207);
+    padding-left: 70px;
+}
+
+.left__below__BTN{
+    margin-top: 10px;
+}
+
+.left__below__btnLine{
+    padding: 1px 1.5px;
+    border: 3px solid rgb(238, 70, 70);
+}
+
+.left__below__BTN button{
+    width: 370px;
+    height: 45px;
+    border: none;
+    background-color: rgb(238, 70, 70);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.left__below__ID{
+    position: relative;
+}
+
+.left__below__PW{
+    position: relative;
+}
+
+.left__below__ID i, .left__below__PW i{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    border-right: 1px solid gray;
+    padding-right: 20px;
+}
+
+
+/* 아이디 기억하기 */
+
+.left__below__memberInfo{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    width: 380px;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.below__memberInfo__remember{
+    display: flex;
+    align-items: center;
+    
+}
+
+.below__memberInfo__remember input{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 5px; 
+}
+
+.below__memberInfo__remember > span{
+    font-size: 18px;
+}
+
+.memberInfo__find{
+    display: flex;
+}
+
+.memberInfo__find a{
+    margin: 0px 5px;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.below__memberInfo__FindId{
+    display: flex;
+    justify-content: center;
+}
+
+.below__memberInfo__FindId > span > i, .below__memberInfo__FindPw > span > i{
+    margin-left: 3px;
+    font-size: 10px;
+}
+
+/* 네이버 로그인 */
+
+.left__below__naverLogin{
+    margin-top: 20px;
+    position: relative;
+}
+
+.left__below__naverLogin input{
+    width: 380px;
+    height: 50px;
+    border: none;
+    background-color: rgb(20, 194, 49);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.left__below__naverLogin i{
+    position: absolute;
+    left: 20px;
+    top: 13px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    padding-right: 10px;
+    border-right: 2px solid rgba(230, 225, 225, 0.945);
+}
+
+/* 오른쪽 화면 */
+
+.login__right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.login__right img{
+    margin-top: 40px;
+    width: 450px;
+
+}
